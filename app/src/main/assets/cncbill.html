@@ -1,188 +1,313 @@
 <html>
 <head>
-  <style>
-        table, th, td {
+    <style>
+        table {
 			border:1px solid black;
 			border-collapse: collapse;
 			border-spacing: 0;
 			width: 100%;
+			/*ADDED*/
+			/*table-layout: fixed;*/
+			/*overflow: hidden;*/
         }
 			th, td {
 			text-align: left;
-			font-size: xx-large;
-			padding: 8px;
+			font-size:x-large; /*font-size:xx-large;*/
+			padding: 7px;
+			border:1px solid black;
         }
         input {
-			font-size: xx-large;
+			font-size: x-large; /*font-size:xx-large;*/
 			border-width:0px;
 			border:none;
         }
         input:focus{outline:none!important;}
+        input{
+        	/*width: auto;*/
+        }
+
+        .mark-width {
+        	width: 99%;
+        }
+
+        textarea{
+        	font-size: x-large; /*font-size:xx-large;*/
+			border:none;
+			width: 100%;
+        }
+        textarea:focus{outline:none!important;}
+
+        @media print {
+        	.col-w {
+        		width: 250px;
+        	}
+        	.col-value {
+        		width: 300px !important;
+        	}
+        }
     </style>
 </head>
-<body style="font-size: largo" id="mytab">
+<body style="font-size: large" id="mytab">
+<center><img src="shivam_word.jpg" style="width: 90%; height:90px; margin: 0px 0px 5px 0px;" /></center>
+<!-- Table 1 -->
 <table style="overflow-x:auto">
-  <tr>
-    <td colspan="3">SL NO. :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">COMPANY NAME :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">CONTACT PERSON :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">CITY :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">STREET :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">DEPATATCH DATE :<input type="date"></td>
-  </tr>
-  <tr>
-    <td colspan="3">MODEL :<input type="text"></td>
-  </tr>
-  <tr><td colspan="3" style="border:none"></td></tr>
-  <tr><td colspan="3" style="border:none"></td></tr>
-  <tr>
-    <td >DESCRIPTION</td>
-		<td>VALUES</td>
-		<td>REMARK</td>
-  </tr>
-	  <tr>
-    <td style="white-space:nowrap">M/C ZERO POS.</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap" >M/C CEN.GHT</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">X BALL SCR. PITCH</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">Z BALL SCR. PITCH</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">X BACKLESS</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">Z BACKLESS</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-    <td style="white-space:nowrap">X SOFT. LMT+</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-    <td style="white-space:nowrap">X SOFT. LMT-</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-		<td style="white-space:nowrap">Z SOFT. LMT+</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-   <tr>
-		<td style="white-space:nowrap">Z SOFT. LMT-</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	
+    <tr>
+        <td colspan="3" style="font-weight : bold;">SL NO. :  <input type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">COMPANY NAME :  <input type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">CONTACT PERSON :  <input type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">CITY :  <input type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">STREET :  <input type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">DEAPATCH DATE  :  <input type="date"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="font-weight : bold;">MODEL :<input type="text"></td>
+    </tr>
+    <tr><td colspan="3" style="border:none"></td></tr>
+    <tr><td colspan="3" style="border:none"></td></tr>
+    <tr>
+        <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
+        <td class="col-value" style="font-weight : bold;">VALUES</span></td>
+        <td style="font-weight : bold;">REMARK</td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap;">M/C ZERO POS.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap" >M/C CEN.GHT</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X BALL SCR. PITCH</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z BALL SCR. PITCH</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X BACKLESS</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z BACKLESS</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X SOFT. LMT+</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X SOFT. LMT-</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z SOFT. LMT+</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z SOFT. LMT-</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+
 </table>
-1</br>2</br>3</br>4</br>5</br>6</br>7</br>8</br>9</br>10</br>11</br>12</br>13</br>
+<br>
+<!-- Table 2 -->
 <table style="overflow-x:auto">
-  <tr>
-    <td colspan="3">SL NO. :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">COMPANY NAME :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">CONTACT PERSON :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">CITY :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">STREET :<input type="text"></td>
-  </tr>
-  <tr>
-    <td colspan="3">DEPATATCH DATE :<input type="date"></td>
-  </tr>
-  <tr>
-    <td colspan="3">MODEL :<input type="text"></td>
-  </tr>
-  <tr><td colspan="3" style="border:none"></td></tr>
-  <tr><td colspan="3" style="border:none"></td></tr>
-  <tr>
-    <td >DESCRIPTION</td>
-		<td>VALUES</td>
-		<td>REMARK</td>
-  </tr>
-	  <tr>
-    <td style="white-space:nowrap">M/C ZERO POS.</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap" >M/C CEN.GHT</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">X BALL SCR. PITCH</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">Z BALL SCR. PITCH</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">X BACKLESS</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	<tr>
-    <td style="white-space:nowrap">Z BACKLESS</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-    <td style="white-space:nowrap">X SOFT. LMT+</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-    <td style="white-space:nowrap">X SOFT. LMT-</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-	</tr>
-	<tr>
-		<td style="white-space:nowrap">Z SOFT. LMT+</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-   <tr>
-		<td style="white-space:nowrap">Z SOFT. LMT-</td>
-		<td><input type="text"></td>
-		<td><input type="text"></td>
-  </tr>
-	
+    <tr>
+        <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
+        <td class="col-value" style="font-weight : bold;">VALUES</span></td>
+        <td style="font-weight : bold;">REMARK</td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">REP. SPEED X/Z</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">JOG R.. W. LMT</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">JOG. WELO LMT</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP R.P.M</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">CHUNK PRE.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">TAIL STOCK PRE.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">LUB STOCK PRE.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP PULLY</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">MOTOR PULLY</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">ENC. BELT</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">MOTOR BELT</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">PPU ORDER NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">PPU SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">MCP ORDER NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">MCP SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X DRIVE ORD. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X DRIVE SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
 </table>
+<BR><BR><BR>
+<!-- Table 3 -->
+<table style="overflow-x:auto">
+    <tr>
+        <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
+        <td class="col-value" style="font-weight : bold;">VALUES</span></td>
+        <td style="font-weight : bold;">REMARK</td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z DRIVE ORDER. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z DRIVE SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X MOTOR ORD. NO</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">X MOTOR SR. NO</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z MOTOR ORD. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">Z MOTOR SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP DRIVE ORD. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP DRIVE SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP MOTOR ORD. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SP MOTOR SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">CYLINDER SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">TURRET SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">POWER PACK SR. NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td style="padding: 2px;"><textarea></textarea></td>
+    </tr>
+</table>
+<BR>
+<table>
+    <tr>
+        <td style="font-weight : bold;">REMARK....</td>
+    </tr>
+    <tr>
+        <td><textarea placeholder="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea></td>
+    </tr>
+</table>
+<center><img src="shivam_word.jpg" style="width: 95%; height:90px; margin: 13px 0 0 0;" /></center>
 </body>
 </html>

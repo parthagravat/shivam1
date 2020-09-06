@@ -39,6 +39,7 @@ public class Cnc_Bill extends AppCompatActivity {
     private void createWebPrintJob(WebView webView) {
         PrintManager printManager = (PrintManager) this.getSystemService(Context.PRINT_SERVICE);
         PrintDocumentAdapter printAdapter = webView.createPrintDocumentAdapter();
+
         String jobName = getString(R.string.app_name) + " Print Test";
         if (printManager != null)
         {
