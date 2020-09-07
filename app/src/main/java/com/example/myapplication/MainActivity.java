@@ -3,7 +3,9 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.Html;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,11 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     public File myFile;
     public String myPath;
+    TextView Bill;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Bill = findViewById(R.id.Bill);
         myPath = Environment.getExternalStorageDirectory().getPath() + "/Shivam Bills/";
         myFile = new File(myPath);
         boolean success = true;
@@ -31,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             //Toast.makeText(MainActivity.this, "Failed - Error", Toast.LENGTH_SHORT).show();
         }
-
     }
 
 
@@ -42,5 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     // From VMC button onclick go to vmc bill activity
     public void goto_vmc_bill(View view) {
+        startActivity(new Intent(getApplicationContext() , Vmc_Bill.class));
     }
 }

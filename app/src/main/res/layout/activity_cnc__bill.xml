@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".Cnc_Bill">
 
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,12 +26,12 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="300dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/orange_round"
+        android:background="@drawable/round_btn"
         android:onClick="doit"
         android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="@+id/web_view"

@@ -24,6 +24,7 @@ public class Cnc_Bill extends AppCompatActivity {
         WebSettings webSettings = myweb_wb.getSettings();
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setUseWideViewPort(true);
+        myweb_wb.getSettings().setBuiltInZoomControls(true);
 
 
         //Load html file in WebView
