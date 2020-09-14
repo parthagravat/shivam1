@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Shivam Microtech</string>
     <string name="button">Print</string>
+    <string name="Machine_Report">Machine Report</string>
 </resources>

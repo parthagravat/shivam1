@@ -2,7 +2,7 @@
 <head>
     <style>
         table {
-			border:2px solid black;
+			border:1px solid black;
 			border-collapse: collapse;
 			border-spacing: 0;
 			width: 100%;
@@ -12,12 +12,12 @@
         }
 			th, td {
 			text-align: left;
-			font-size:x-large; /*font-size:xx-large;*/
-			padding: 7px;
+			font-size:small; /*font-size:xx-large;*/
 			border:1px solid black;
+			padding-left: 8px;
         }
         input {
-			font-size: x-large; /*font-size:xx-large;*/
+			font-size: small; /*font-size:xx-large;*/
 			border-width:0px;
 			border:none;
         }
@@ -31,7 +31,7 @@
         }
 
         textarea{
-        	font-size: x-large; /*font-size:xx-large;*/
+        	font-size: small; /*font-size:xx-large;*/
 			border:none;
 			width: 100%;
         }
@@ -47,33 +47,34 @@
         }
     </style>
 </head>
-<body style="font-size: large" id="mytab">
-<center><img src="shivam_word.jpg" style="width: 90%; height:90px; margin: 0px 0px 5px 0px;" /></center>
+<body>
+<center><img src="shivam_word.jpg" style="width: 90%; height:90px; margin: 10px 0px 5px 0px;" /></center>
 <!-- Table 1 -->
-<table style="overflow-x:auto">
+<table style="overflow-x:auto; margin-top: 35px;">
     <tr>
-        <td colspan="3" style="font-weight : bold;">SL NO. :  <input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">SL NO. :  <input type="text" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">COMPANY NAME :  <input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">COMPANY NAME :  <input type="text" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">CONTACT PERSON :  <input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">CONTACT PERSON :  <input type="text" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">CITY :  <input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">CITY :  <input type="text" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">STREET :  <input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">STREET :  <input type="text" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">DEAPATCH DATE  :  <input type="date"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">DEAPATCH DATE  :  <input type="date" style="margin-left: 13px;"></td>
     </tr>
     <tr>
-        <td colspan="3" style="font-weight : bold;">MODEL :<input type="text"></td>
+        <td colspan="3" style="font-weight : bold; padding-left: 5px;">MODEL :<input type="text" style="margin-left: 13px;"></td>
     </tr>
 </table>
 <br>
+<!--table 2-->
 <table>
     <tr>
         <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
@@ -83,17 +84,17 @@
     <tr>
         <td style="white-space:nowrap;">M/C ZERO POS.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap" >M/C CEN.GHT</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X BALL SCR. PITCH</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z BALL SCR. PITCH</td>
@@ -103,38 +104,37 @@
     <tr>
         <td style="white-space:nowrap">X BACKLESS</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z BACKLESS</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X SOFT. LMT+</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X SOFT. LMT-</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z SOFT. LMT+</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z SOFT. LMT-</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
-
 </table>
 <br>
-<!-- Table 2 -->
-<table style="overflow-x:auto">
+<!-- Table 3 -->
+<table style="overflow-x:auto; margin-top : 1px;">
     <tr>
         <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
         <td class="col-value" style="font-weight : bold;">VALUES</span></td>
@@ -143,92 +143,92 @@
     <tr>
         <td style="white-space:nowrap">REP. SPEED X/Z   </td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
-        <td style="white-space:nowrap">JOG R.. W. LMT   </td>
+        <td style="white-space:nowrap">JOG R. W. LMT   </td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">JOG. WELO LMT    </td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP R.P.M     </td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">CHUNK PRE.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">TAIL STOCK PRE.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">LUB STOCK PRE.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP PULLY</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">MOTOR PULLY</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">ENC. BELT</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">MOTOR BELT</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">PPU ORDER NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
-        <td style="white-space:nowrap">PPU SR. NO.</td>
+        <td style="white-space:nowrap; padding-top: 8px;">PPU SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">MCP ORDER NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">MCP SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X DRIVE ORD. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X DRIVE SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
 </table>
-<BR><BR><BR>
-<!-- Table 3 -->
-<table style="overflow-x:auto">
+<BR>
+<!-- Table 4 -->
+<table style="overflow-x:auto; margin-top : 10px;">
     <tr>
         <td class="col-w" style="font-weight : bold;">DESCRIPTION</span></td>
         <td class="col-value" style="font-weight : bold;">VALUES</span></td>
@@ -237,85 +237,130 @@
     <tr>
         <td style="white-space:nowrap">Z DRIVE ORDER. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z DRIVE SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td ><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X MOTOR ORD. NO</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td ><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">X MOTOR SR. NO</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z MOTOR ORD. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">Z MOTOR SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP DRIVE ORD. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP DRIVE SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP MOTOR ORD. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">SP MOTOR SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">CYLINDER SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">TURRET SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
     </tr>
     <tr>
         <td style="white-space:nowrap">POWER PACK SR. NO.</td>
         <td><input type="text" class="mark-width"></td>
-        <td style="padding: 2px;"><textarea></textarea></td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">CHUCK SIZE.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">SPINDLE MODEL NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">PANEL A.C</td>
+        <td><input type="text" class="mark-width"></td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">LUB. OIL NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td><textarea></textarea></td>
     </tr>
 </table>
 <BR>
-<table>
+<!--TABLE 5-->
+<table style="overflow-x:auto; margin-top : 10px;">
+    <tr>
+        <td class="col-w" style="font-weight : bold;">DESCRIPTION</td>
+        <td class="col-value" style="font-weight : bold;">VALUES</td>
+        <td style="font-weight : bold;">REMARK</td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap">POWER PACK OIL NO.</td>
+        <td><input type="text" class="mark-width"></td>
+        <td ><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap"><input type="text" class="mark-width"></td>
+        <td><input type="text" class="mark-width"></td>
+        <td ><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td style="white-space:nowrap"><input type="text" class="mark-width"></td>
+        <td><input type="text" class="mark-width"></td>
+        <td ><textarea></textarea></td>
+    </tr>
+</table>
+<BR>
+<!--table 6-->
+<table style="margin-top: 10px;">
     <tr>
         <td style="font-weight : bold;">REMARK....</td>
     </tr>
     <tr>
-        <td><textarea placeholder="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea></td>
+        <td><textarea placeholder="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea></td>
     </tr>
 </table>
-<img src="shivam_word.jpg" style="width: 78%; height:100px; margin: 8px 0 0 0; float: left;"/>
+<img src="shivam_word.jpg" style="width: 78%; height:100px; margin: 15px 0 0 0; float: left;"/>
+<!--table 7-->
 <br><br><br>
-<table style="width: 20%;  float: right; border:3px solid black; margin-left: 5px;">
+<table style="width: 20%; height: 4%;  float: right; border:3px solid black; margin-left: 5px;">
     <tr>
         <td>
-            <input type="text" class="mark-width" placeholder="FOR.SHIVAM MICROTECH"
-                   style="font-size: 9px; color: black;">
+            <input type="text" class="mark-width"  style="font-size: medium; color: black;">
         </td>
     </tr>
 </table>
